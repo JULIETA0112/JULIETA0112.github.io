@@ -1,0 +1,53 @@
+p {
+    color: rgb(206, 44, 125);
+    font-family: Montserrat;
+    font-size: 13px;
+    font-weight: bold;
+    font-style:italic ;
+    text-align: left;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+div {
+    background-color: crimson;
+    width: 500px;
+    height: 20px;
+  
+
+}
+
+body {
+    background-color: rgb(238, 130, 152);
+    background-image: url(VALEN.png);
+    background-image: url(fondo.gif);
+    height: 200dvh;
+    background-position: center;
+    background-size: cover;
+}
+header {
+    filter: drop-shadow(0px 0px 15px color#0009);
+ }
+
+.text.container {
+    min-height: 100vh;
+    position: fixed;
+    top: 0;
+    display: flex;
+    font-size: clamp(1rem, 9vw, 12rem);
+    color: var(--text-color);
+    font-weight: 700;
+    animation: aparecer-texto;
+    animation-timeline: scroll();
+    animation-timing-function: cubic-bezier(20);
+    animation-play-state: ;
+
+ }
+ @keyframes aparecer-texto {
+    0% {
+        opacity: 0;
+        translate: 0 -20%;
+        scale: .8;
+     }
+    
+  }
